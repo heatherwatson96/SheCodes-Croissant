@@ -1,11 +1,11 @@
 body {
-  color: rgb(130, 164, 249);
-  background: rgb(253, 231, 252);
+  color: var(--titles);
+  background: var(--background);
 }
 h1 {
   margin: 40px;
   text-align: center;
-  color: rgb(204, 152, 244);
+  color: var(--primary-color);
 }
 h2 {
   text-align: center;
@@ -18,6 +18,12 @@ h3 {
   text-align: center;
   margin: 40px;
 }
+:root {
+  --titles: #cc98f4;
+  --primary-color: #f1217c;
+  --secondary-color: #f88787;
+  --background: #fde7fc;
+}
 .contact,
 .link-home,
 .show {
@@ -25,9 +31,9 @@ h3 {
   font-size: 18px;
   padding: 8px;
   border-radius: 4px;
-  color: rgb(252, 182, 182);
+  color: var(--secondary-color);
   margin: 50px;
-  border: 1px solid rgb(252, 182, 182);
+  border: 1px solid var(--secondary-color);
   display: flex;
   justify-content: space-evenly;
 }
